@@ -1,4 +1,4 @@
-To use this script you have to fill .worktime file in your HOME dir as followed:
+To use this script, fill the .worktime file in your HOME dir as following:
 
 [GENERAL]
 username=<your portal.biocad.ru username>

@@ -3,7 +3,7 @@
 import requests
 import datetime
 import os
-import ConfigParser
+import configparser
 
 
 def btrx_format(iso_format):
@@ -20,7 +20,7 @@ exclude_dates = {datetime.date(current_date.year, 2, 23),
                  datetime.date(current_date.year, 11, 4),
                  datetime.date(current_date.year, 12, 31)}
 
-config = ConfigParser.ConfigParser()
+config = configparser.ConfigParser()
 config.readfp(open(os.path.join(os.getenv('HOME'), ".worktime")))
 
 url = "https://portal.biocad.ru/work_time/index.php"
